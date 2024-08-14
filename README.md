@@ -11,7 +11,28 @@
 
 (rafdb 이외에 affctnet 관련 코드는 원본 그대로의 상태로, 수정하지 않았습니다.)
 
-## 원본 코드 링크
-1. POSTER: <https://github.com/zczcwh/POSTER>
-2. DAN: <https://github.com/yaoing/DAN>
-3. DDAMFN: <https://github.com/SainingZhang/DDAMFN>
+<br>
+
+## 논문 정보 및 링크
+### POSTER
+> "Poster: A pyramid cross-fusion transformer network for facial expression recognition"<br>
+> ICCV Workshop (AMFG) 2023
+
+- [POSTER 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=Zheng%2C+Ce%2C+Matias+Mendieta%2C+and+Chen+Chen.+%22Poster%3A+A+pyramid+cross-fusion+transformer+network+for+facial+expression+recognition.%22+Proceedings+of+the+IEEE%2FCVF+International+Conference+on+Computer+Vision.+2023.&btnG=)
+- [POSTER Github 링크](https://github.com/zczcwh/POSTER)
+
+  
+### DAN
+> "Distract your attention: Multi-head cross attention network for facial expression recognition"<br>
+> Biomimetics 2023
+
+- [DAN 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=Wen%2C+Zhengyao%2C+et+al.+%22Distract+your+attention%3A+Multi-head+cross+attention+network+for+facial+expression+recognition.%22+Biomimetics+8.2+%282023%29%3A+199.&btnG=)
+- [DAN Github 링크](https://github.com/yaoing/DAN)
+
+  
+### DDAMFN
+> "A dual-direction attention mixed feature network for facial expression recognition"<br>
+> Electronics 2023
+
+- [DDAMFN 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=Zhang%2C+Saining%2C+et+al.+%22A+dual-direction+attention+mixed+feature+network+for+facial+expression+recognition.%22+Electronics+12.17+%282023%29%3A+3595.&btnG=)
+- [DDAMFN Github 링크](https://github.com/SainingZhang/DDAMFN)
