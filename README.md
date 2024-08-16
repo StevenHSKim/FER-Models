@@ -16,7 +16,7 @@
 - 사용된 하이퍼 파라미터들은 위 세가지 파일들의 가장 상단에 `parse_args` 함수에서 확인하실 수 있습니다. 추가 인자 입력 없이 `default`에 할당된 값들만을 사용하였습니다.
 <br>
 
-- 데이터 (rafdb, affectnet, ferplus 등)별로 train,test 파일을 분리해두는 FER 분야 코드의 경향을 그대로 유지하였습니다.
+- 데이터셋 (rafdb, affectnet, ferplus 등)별로 train,test 파일을 분리해두는 FER 분야 코드의 경향을 그대로 유지하였습니다.
 - rafdb 이외에 affectnet 관련 코드는 원본 그대로의 상태로, 수정하지 않았습니다.
 
 <br>
