@@ -2,62 +2,47 @@
 
 
 ```bash
-FER-Models/
+FER-Models/                            # 데이터 파일 및 관련 자료가 저장되는 디렉토리
 │
 ├── data/                              # 데이터 파일 및 관련 자료가 저장되는 디렉토리
 │
-├── evaluation/                        # 모델 평가 관련 파일들이 저장되는 디렉토리
-│
-├── preprocessing/                     # 데이터 전처리 스크립트들이 저장되는 디렉토리
-│
-├── requirements.txt                   # 프로젝트의 Python 패키지 의존성 목록을 명시한 파일
+├── requirements.yaml                  # Python 패키지 dependencies 목록을 명시한 파일
 │
 └── src/                               # 소스 코드가 저장되는 메인 디렉토리
     │
     ├── common/                        # 공통으로 사용되는 모듈들이 저장된 디렉토리
-    │   ├── loss.py                    # 손실 함수 구현 파일
-    │   ├── model_structure.py         # 모델 구조 정의 파일
-    │   └── trainer.py                 # 모델 학습에 필요한 트레이너 파일
+    │   ├── loss.py                    # 다양한 사용자 정의 손실 함수 정의
+    │   └── trainer.py                 # 모델 학습에 필요한 트레이너 파일
     │
     ├── configs/                       # 설정 파일들이 저장된 디렉토리
-    │   ├── model/                     # 모델별 설정 파일들이 저장된 하위 디렉토리
-    │   │   ├── DAN.yaml               # DAN 모델 설정 파일
-    │   │   ├── DDAMFN.yaml            # DDAMFN 모델 설정 파일
-    │   │   ├── POSTER.yaml            # POSTER 모델 설정 파일
-    │   │   └── RAC.yaml               # RAC 모델 설정 파일
-    │   └── overall.yaml               # 전체 프로젝트 설정 파일
+    │   ├── model/                     # 모델별 설정 파일들이 저장된 하위 디렉토리
+    │   │   ├── DAN.yaml               # DAN 모델 설정 파일
+    │   │   ├── DDAMFN.yaml            # DDAMFN 모델 설정 파일
+    │   │   └── POSTER.yaml            # POSTER 모델 설정 파일
+    │   └── overall.yaml               # 공통된 설정 파일
     │
-    ├── main.py                        # 프로젝트 메인 실행 파일
+    ├── main.py                        # 메인 실행 파일
     │
     ├── models/                        # 모델 아키텍처들이 저장된 디렉토리
-    │   ├── dan.py                     # DAN 모델 구현 파일
-    │   ├── ddamfn.py                  # DDAMFN 모델 구현 파일
-    │   ├── poster.py                  # POSTER 모델 구현 파일
-    │   ├── pretrain/                  # 사전 학습된 모델 관련 파일들이 저장된 하위 디렉토리
-    │   │   ├── MixedFeatureNet.py     # MixedFeatureNet 모델 구현 파일
-    │   │   ├── hyp_crossvit.py        # Hyp_CrossViT 모델 구현 파일
-    │   │   ├── ir50.py                # IR50 모델 구현 파일
-    │   │   └── mobilefacenet.py       # MobileFaceNet 모델 구현 파일
-    │   └── rac.py                     # RAC 모델 구현 파일
+    │   ├── dan.py                     # DAN 모델 구현 파일
+    │   ├── ddamfn.py                  # DDAMFN 모델 구현 파일
+    │   ├── poster.py                  # POSTER 모델 구현 파일
+    │   └── pretrain/                  # 사전 학습된 모델 관련 파일들이 저장된 하위 디렉토리
+    │       ├── MixedFeatureNet.py     # MixedFeatureNet 모델 구현 파일
+    │       ├── hyp_crossvit.py        # Hyp_CrossViT 모델 구현 파일
+    │       ├── ir50.py                # IR50 모델 구현 파일
+    │       └── mobilefacenet.py       # MobileFaceNet 모델 구현 파일
     │
-    ├── utils/                         # 유틸리티 모듈들이 저장된 디렉토리
-    │   ├── configurator.py            # 설정 파일 처리 유틸리티
-    │   ├── data_utils.py              # 데이터 관련 유틸리티 함수들
-    │   ├── dataloader.py              # 데이터 로딩 관련 파일
-    │   ├── dataset.py                 # 데이터셋 처리 관련 파일
-    │   ├── logger.py                  # 로깅 관련 유틸리티 파일
-    │   ├── metrics.py                 # 평가 지표 관련 파일
-    │   ├── run_experiments.py         # 실험 실행 유틸리티 파일
-    │   └── utils.py                   # 기타 유틸리티 함수들
-    │
-    └── 실행파일/                        # 모델 실행 파일들이 저장된 디렉토리
-        ├── dan_실행.py                # DAN 모델 실행 파일
-        ├── ddamfn_실행.py             # DDAMFN 모델 실행 파일
-        └── poster_실행.py             # POSTER 모델 실행 파일
-
+    └── utils/ # 유틸리티 모듈들이 저장된 디렉토리
+        ├── configurator.py            # 설정 파일 처리 유틸리티
+        ├── data_utils.py              # 데이터 관련 유틸리티 함수들
+        ├── dataloader.py              # 데이터 로딩 관련 파일
+        ├── dataset.py                 # 데이터셋 처리 관련 파일
+        ├── logger.py                  # 로깅 관련 유틸리티 파일
+        ├── metrics.py                 # 평가 지표 관련 파일
+        ├── run_experiments.py         # 실험 실행 유틸리티 파일
+        └── utils.py                   # 기타 유틸리티 함수들
 ```
-
-
 
 
 <br>
