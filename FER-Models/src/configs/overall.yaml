@@ -1,0 +1,20 @@
+raf_path: '/path/to/raf-dataset/'  # Default path for datasets, individual models can override if needed.
+gpu: '0,1'  # Default GPU settings, assuming multi-GPU is the common case.
+workers: 4  # Default number of data loading workers.
+rabdin_state: 42 # Default random state
+
+batch_size: 128  # Default batch size for training.
+val_batch_size: 32  # Batch size for validation/testing
+optimizer: 'adamw'  # Default optimizer type.
+lr: 0.001  # Default learning rate.
+weight_decay: 1e-4  # Default weight decay for regularization.
+
+test_size: 0.2  # Default fraction of data used for testing.
+val_size: 0.25  # Default fraction of data used for validation.
+
+lr_scheduler: 'cosine'  # Default learning rate scheduler type.
+t_max: 20  # Default T_max for CosineAnnealingLR scheduler, applicable if using cosine scheduling.
+
+epochs: 100  # Default number of total training epochs.
+iterations: 10  # Default number of iterations for experiments, useful for statistical measures.
+early_stopping_patience: 20  # Default number of epochs to wait for improvement before stopping.

@@ -1,0 +1,7 @@
+num_class: 7
+num_head: 4
+pretrained: true
+resnet18_checkpoint_path: './models/resnet18_msceleb.pth'
+device: 'cuda'
+
+use_parallel: False

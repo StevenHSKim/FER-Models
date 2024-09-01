@@ -1,0 +1,7 @@
+num_class: 7
+num_head: 2
+pretrained: true
+pretrained_model_path: './pretrained/MFN_msceleb.pth'
+device: 'cuda'
+
+use_parallel: True
