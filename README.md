@@ -71,7 +71,7 @@ FER-Models/
 - [DDAMFN Github 링크](https://github.com/SainingZhang/DDAMFN)
 
 
-### RAC
+### LNSU-Net
 > "Leave No Stone Unturned: Mine Extra Knowledge for Imbalanced Facial Expression Recognition"<br>
 > NeurIPS 2023
 
