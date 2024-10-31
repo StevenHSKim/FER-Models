@@ -85,3 +85,8 @@ FER-Models/
 
 - [Ada-DF 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=)
 - [Ada-DF Github 링크](https://github.com/taylor-xy0827/Ada-DF)
+
+<br>
+
+## 데이터셋
+- [RAF-DB](http://www.whdeng.cn/raf/model1.html)
