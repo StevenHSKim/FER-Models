@@ -86,7 +86,37 @@ FER-Models/
 - [Ada-DF 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=)
 - [Ada-DF Github 링크](https://github.com/taylor-xy0827/Ada-DF)
 
+
+### POSTER++
+> "POSTER++: A simpler and stronger facial expression recognition network"<br>
+> Pattern Recognit. 2024
+
+- [POSTER++ 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=)
+- [POSTER++ Github 링크](https://github.com/talented-q/poster_v2)
+
+
+### MFER
+> "Multiscale Facial Expression Recognition Based on Dynamic Global and Static Local Attention"<br>
+> IEEE Trans. Affect. Comput. 2024
+
+- [MFER 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=)
+- [MFER Github 링크](https://github.com/XuJ1E/MFER/?tab=readme-ov-file)
+
+
+### GSDNet
+> "A gradual self distillation network with adaptive channel attention for facial expression recognition"<br>
+> Appl. Soft. Comput. 2024
+
+- [GSDNet 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=)
+- [GSDNet Github 링크](https://github.com/Emy-cv/GSDNet/blob/main/GSD-Net/train.py)
+
+
 <br>
 
 ## 데이터셋
 - [RAF-DB](http://www.whdeng.cn/raf/model1.html)
+- [FERPlus](https://github.com/Microsoft/FERPlus)
+- [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
+- [ExpW](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html)
+- [SFEW2.0](https://users.cecs.anu.edu.au/~few_group/AFEW.html)
+- [CK+](https://www.jeffcohn.net/Resources/)
