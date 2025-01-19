@@ -91,7 +91,7 @@ FER-Models/
 > "POSTER++: A simpler and stronger facial expression recognition network"<br>
 > Pattern Recognit. 2024
 
-- [POSTER++ 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=)
+- [POSTER++ 논문 링크](https://www.sciencedirect.com/science/article/pii/S0031320324007027)
 - [POSTER++ Github 링크](https://github.com/talented-q/poster_v2)
 
 
@@ -99,7 +99,7 @@ FER-Models/
 > "Multiscale Facial Expression Recognition Based on Dynamic Global and Static Local Attention"<br>
 > IEEE Trans. Affect. Comput. 2024
 
-- [MFER 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=)
+- [MFER 논문 링크](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10678884)
 - [MFER Github 링크](https://github.com/XuJ1E/MFER/?tab=readme-ov-file)
 
 
@@ -107,7 +107,7 @@ FER-Models/
 > "A gradual self distillation network with adaptive channel attention for facial expression recognition"<br>
 > Appl. Soft. Comput. 2024
 
-- [GSDNet 논문 링크](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=)
+- [GSDNet 논문 링크](https://pdf.sciencedirectassets.com/272229/1-s2.0-S1568494624X00101/1-s2.0-S1568494624005362/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCICQFCchd0sby4HxcuaQJAxsyqg%2FhPExv%2FwxiOxtFoMZVAiEAmL6I67PPYelV4hKFlr6bik3Bh3Z%2BPbTnJpwruTSc2E4qvAUIi%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDGk4KXTlHzsNmbdmUSqQBQUi0TJso5AaNn6hUev8iDIUCVXOpDn9t2OC4fBE2JHhSH6HEhL0jc2IlhzRdNB7Ha0950m7X14EISBlF0HEjVri2%2FenN2woHqNLZT6yGD0Ug8cUYPhhyWMN3f7QiobiYIt3QRgpzYWkceRKYRsbZdROVR1eeKh%2FBevXnjLMvDiQaD2NVWdCBFOGGhuTPo%2BPWYs8AmV3dHoeXugGwG2zjhHPW%2FVGrlSeUkklbEFgSnR4wScyMraYEdto1BmYY0fmH%2FXn2sNuPp0Cl3y1GauDanxF9mM8nnPWwcyBhGi9Z9f7bVobZk77DfK6arOtIwxYFORopI4%2Bm5Nj4WXbBFJhkkmHnhe%2FFzEryNKeM%2FrDwKlpmxEoKIs4T54yicNMLJGHqTSOG0TXvlx6ZFNOEweRBGztaylX1wA2f%2B1tth0a%2BsIhdXfnDzJEvpOj1VfvNe6x9Rgq9I%2FvfjLJukojWz%2BYn6l80bSCdVp89WgK47HvD0Q%2BH4HP6hQUwFS%2FtvObidbw58KNE65A%2Fs5Q10k%2Frd9p3%2BN8LLmQRvgNAWCpmh7ZruLJSaBUXNbLCZOR4oW1qywIvink7BN9nRs31GFAMLYMZBQ6f%2BXr4%2FPnz2yC4HBsWWWF5rC%2FwI58xNgVkKwV4oobxm2iAvR3u%2FH%2B0nve9iUx2a7utSZWseyCG6uCQCUWk9ElgjHOmzuU891Kl2mvJcOeFiiyJhQWcojqiKJPmmLo9J1NIE14aZbIH7wYsfpkXlLbaghG%2FLKKkHRT5AHaLLUnLTR%2BuDUjwTVn3W0DUU5r0LvrINLqxNHC1f4bhyUteQ3cLwyqnmqCroHechweQvrFYj1JuunQ6XUDKHFME%2F%2FFocHC1orBd768nRxa4N2kCq5YMISXs7wGOrEBbScr1M9UcnbdlJnx0qZFO8%2FoQPnTVkAexceqmv30b%2BSo%2Bs69hotjf83Cxez7lFaMzz%2BhiqkFa914N%2FDrBGoeQE6%2FUaUpF5H8Mq%2FfG8zaJlu8sXfTPdwSJL%2BCzYIiVngBG0Wd9j4RGePwiCiX8VMyQ1NoTHxO8Z00STVOi2ySBrDastiEJkjLYtWac0PP%2F1m2G19DKiFtb4lPMTQGe0gqt6GsJ6hV3J86NdZRSkr4C09u&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250119T103707Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY6KOPIJKO%2F20250119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8f2dad077d509ef51c611e8d264cd13a13b66a7f26f562fe2ba1ce911d3aad8e&hash=06c3022c64e1a5ce216c92b80c71f9f81f70a01bccd2554ca62610b1c1e264db&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1568494624005362&tid=spdf-a5db43b8-d251-4c30-95bd-3858dbdeb00b&sid=29f211986649824dc4897c0-a71db1183834gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=11145c5f57515c5e565800&rr=90463007e888ea9b&cc=kr)
 - [GSDNet Github 링크](https://github.com/Emy-cv/GSDNet/blob/main/GSD-Net/train.py)
 
 
