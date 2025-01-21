@@ -3,45 +3,48 @@
 
 ```bash
 FER-Models/                            
-│
-├── data/                              # 데이터 파일 및 관련 자료가 저장되는 디렉토리
-│
-├── requirements.yaml                  # Python 패키지 dependencies 목록을 명시한 파일
-│
-└── src/                               # 소스 코드가 저장되는 메인 디렉토리
-    │
-    ├── common/                        # 공통으로 사용되는 모듈들이 저장된 디렉토리
-    │   ├── loss.py                    # 다양한 사용자 정의 손실 함수 정의
-    │   └── trainer.py                 # 모델 학습에 필요한 트레이너 파일
-    │
-    ├── configs/                       # 설정 파일들이 저장된 디렉토리
-    │   ├── model/                     # 모델별 설정 파일들이 저장된 하위 디렉토리
-    │   │   ├── DAN.yaml               # DAN 모델 설정 파일
-    │   │   ├── DDAMFN.yaml            # DDAMFN 모델 설정 파일
-    │   │   └── POSTER.yaml            # POSTER 모델 설정 파일
-    │   └── overall.yaml               # 공통된 설정 파일
-    │
-    ├── main.py                        # 메인 실행 파일
-    │
-    ├── models/                        # 모델 아키텍처들이 저장된 디렉토리
-    │   ├── dan.py                     # DAN 모델 구현 파일
-    │   ├── ddamfn.py                  # DDAMFN 모델 구현 파일
-    │   ├── poster.py                  # POSTER 모델 구현 파일
-    │   └── pretrain/                  # 사전 학습된 모델 관련 파일들이 저장된 하위 디렉토리
-    │       ├── MixedFeatureNet.py     # MixedFeatureNet 모델 구현 파일
-    │       ├── hyp_crossvit.py        # Hyp_CrossViT 모델 구현 파일
-    │       ├── ir50.py                # IR50 모델 구현 파일
-    │       └── mobilefacenet.py       # MobileFaceNet 모델 구현 파일
-    │
-    └── utils/                         # 유틸리티 모듈들이 저장된 디렉토리
-        ├── configurator.py            # 설정 파일 처리 유틸리티
-        ├── data_utils.py              # 데이터 관련 유틸리티 함수들
-        ├── dataloader.py              # 데이터 로딩 관련 파일
-        ├── dataset.py                 # 데이터셋 처리 관련 파일
-        ├── logger.py                  # 로깅 관련 유틸리티 파일
-        ├── metrics.py                 # 평가 지표 관련 파일
-        ├── run_experiments.py         # 실험 실행 유틸리티 파일
-        └── utils.py                   # 기타 유틸리티 함수들
+├── checkpoints/                    # 모델 체크포인트를 저장하는 디렉터리
+├── config/                         # 데이터셋 및 설정 파일을 포함하는 디렉터리
+│   ├── __init__.py             
+│   └── dataset_configs.py          # 데이터셋 관련 설정 파일
+├── dataset/                        # 원본 데이터 및 전처리된 데이터를 저장하는 디렉터리
+├── environment_all.yaml            # 전체 환경 설정에 필요한 모든 패키지 목록
+├── environment_essential.yaml      # 핵심적으로 필요한 패키지 목록
+└── src/                            # 소스 코드 디렉터리
+    ├── common/                     # 공통 모듈 (손실 함수, 트레이너 등)
+    │   ├── __init__.py         
+    │   ├── loss.py                 # 손실 함수 정의 파일
+    │   └── trainer.py              # 학습 과정 정의 및 실행 파일
+    ├── main.py                     # 프로젝트의 메인 실행 파일
+    ├── models/                     # 모델 아키텍처 관련 파일
+    │   ├── __init__.py         
+    │   ├── adadf/                  # AdaDF 모델 관련 모듈
+    │   │   ├── __init__.py     
+    │   │   ├── adadf.py            # AdaDF 모델 정의
+    │   │   ├── auto_augment.py     # 자동 데이터 증강 관련 코드
+    │   │   └── resnet18.py         # ResNet18 모델 코드
+    │   ├── dan/                    # DAN 모델 관련 모듈
+    │   │   ├── __init__.py     
+    │   │   └── dan.py              # DAN 모델 정의
+    │   ├── ddamfn/                 # DDAMFN 모델 관련 모듈
+    │   │   ├── __init__.py     
+    │   │   ├── DDAM.py             # DDAM 모델 정의
+    │   │   └── MixedFeatureNet.py  # MFN 모델 정의
+    │   ├── poster/                 # Poster 관련 모듈
+    │   │   ├── __init__.py     
+    │   │   ├── crossvit.py         # CrossViT 모델 정의
+    │   │   ├── ir50.py             # 백본 IR-50 모델 코드
+    │   │   ├── mobilefacenet.py    # 백본 MobileFaceNet 모델 코드
+    │   │   └── poster.py           # Poster 모델 정의
+    │   └── pretrain_weights/       # 사전 학습된 가중치 저장 디렉터리
+    └── utils/                      # 유틸리티 코드 모음
+        ├── __init__.py             
+        ├── data_utils.py           # 데이터 관련 유틸리티
+        ├── dataloader.py           # 데이터 로더 정의
+        ├── dataset.py              # 데이터셋 처리 정의
+        ├── run_experiments.py      # 실험 실행 및 관리 코드
+        └── utils.py                # 기타 유틸리티 함수 정의
+
 ```
 
 <br>
