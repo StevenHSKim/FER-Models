@@ -1,18 +1,6 @@
-'''
-pretrain 모델인 hyp_crossvit 모델 정의
-'''
-
-
 import torch
-from torch import nn, einsum
-import torch.nn.functional as F
-from einops import rearrange, repeat
-from einops.layers.torch import Rearrange
-
-import numpy as np
+from torch import nn
 from functools import partial
-
-
 
 
 class Mlp(nn.Module):
@@ -270,3 +258,7 @@ class HyVisionTransformer(nn.Module):
         x_class2 = new_x_l[:, self.in_chans+1, :]
 
         return x_class1
+
+
+
+

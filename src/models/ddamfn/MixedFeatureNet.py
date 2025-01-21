@@ -1,7 +1,3 @@
-'''
-pretrain 모델인 MixedFeatureNet 모델 정의
-'''
-
 
 from torch.nn import Linear, Conv2d, BatchNorm1d, BatchNorm2d, PReLU, Sequential, Module
 import torch

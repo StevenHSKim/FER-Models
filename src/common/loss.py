@@ -1,25 +1,24 @@
-'''
-다양한 사용자 정의 손실 함수를 정의
-'''
-
-
 import sys
 import torch
 from torch import nn
 from torch.nn import functional as F
+
 eps = sys.float_info.epsilon
 
 
-class LabelSmoothingCrossEntropy(nn.Module):
+#### POSTER ####
+
+class POSTER_LabelSmoothingCrossEntropy(nn.Module):
     """
-    POSTER 모델에서 사용
+    NLL loss with label smoothing.
     """
+
     def __init__(self, smoothing=0.1):
         """
         Constructor for the LabelSmoothing module.
         :param smoothing: label smoothing factor
         """
-        super(LabelSmoothingCrossEntropy, self).__init__()
+        super(POSTER_LabelSmoothingCrossEntropy, self).__init__()
         assert smoothing < 1.0
         self.smoothing = smoothing
         self.confidence = 1. - smoothing
@@ -31,14 +30,13 @@ class LabelSmoothingCrossEntropy(nn.Module):
         smooth_loss = -logprobs.mean(dim=-1)
         loss = self.confidence * nll_loss + self.smoothing * smooth_loss
         return loss.mean()
-
-
-class AffinityLoss(nn.Module):
-    """
-    DAN 모델에서 사용
-    """
-    def __init__(self, device, num_class=8, feat_dim=512):
-        super(AffinityLoss, self).__init__()
+    
+    
+#### DAN ####
+    
+class DAN_AffinityLoss(nn.Module):
+    def __init__(self, device, num_class=7, feat_dim=512):
+        super(DAN_AffinityLoss, self).__init__()
         self.num_class = num_class
         self.feat_dim = feat_dim
         self.gap = nn.AdaptiveAvgPool2d(1)
@@ -58,18 +56,14 @@ class AffinityLoss(nn.Module):
         dist = dist / self.centers.var(dim=0).sum()
         loss = dist.clamp(min=1e-12, max=1e+12).sum() / batch_size
         return loss
-    
-    
-class PartitionLoss(nn.Module):
-    """
-    DAN 모델에서 사용
-    """
+
+class DAN_PartitionLoss(nn.Module):
     def __init__(self):
-        super(PartitionLoss, self).__init__()
+        super(DAN_PartitionLoss, self).__init__()
 
     def forward(self, x):
         num_head = x.size(1)
-        if (num_head > 1):
+        if num_head > 1:
             var = x.var(dim=1).mean()
             loss = torch.log(1 + num_head / (var + eps))
         else:
@@ -77,12 +71,11 @@ class PartitionLoss(nn.Module):
         return loss
     
     
-class AttentionLoss(nn.Module):
-    """
-    DDAMFN 모델에서 사용
-    """
+#### DDAMFN ####
+
+class DDAMFN_AttentionLoss(nn.Module):
     def __init__(self, ):
-        super(AttentionLoss, self).__init__()
+        super(DDAMFN_AttentionLoss, self).__init__()
     
     def forward(self, x):
         num_head = len(x)
@@ -98,3 +91,4 @@ class AttentionLoss(nn.Module):
         else:
             loss = 0
         return loss     
+

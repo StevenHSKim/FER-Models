@@ -1,26 +1,16 @@
-'''
-pretrain 모델인 MobileFaceNet 모델 정의
-'''
-
-
-from torch.nn import Linear, Conv2d, BatchNorm1d, BatchNorm2d, PReLU, ReLU, Sigmoid, Dropout2d, Dropout, AvgPool2d, \
-    MaxPool2d, AdaptiveAvgPool2d, Sequential, Module, Parameter
-import torch.nn.functional as F
+from torch.nn import Linear, Conv2d, BatchNorm1d, BatchNorm2d, PReLU, Sequential, Module
 import torch
 import torch.nn as nn
 from collections import namedtuple
-import math
-import pdb
 
 
-##################################  Original Arcface Model #############################################################
-######## ccc#######################
+####  Original Arcface Model #####
 class Flatten(Module):
     def forward(self, input):
         return input.view(input.size(0), -1)
 
 
-##################################  MobileFaceNet #############################################################
+####  MobileFaceNet ####
 
 class Conv_block(Module):
     def __init__(self, in_c, out_c, kernel=(1, 1), stride=(1, 1), padding=(0, 0), groups=1):

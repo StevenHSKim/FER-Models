@@ -1,18 +1,11 @@
-'''
-pretrain 모델인 ir50 모델 정의
-'''
-
-
 from torch.nn import Linear, Conv2d, BatchNorm1d, BatchNorm2d, PReLU, ReLU, Sigmoid, Dropout2d, Dropout, AvgPool2d, \
     MaxPool2d, AdaptiveAvgPool2d, Sequential, Module, Parameter
 import torch.nn.functional as F
 import torch
 from collections import namedtuple
-import math
-import pdb
 
 
-##################################  Original Arcface Model #############################################################
+#####  Original Arcface Model ####
 
 class Flatten(Module):
     def forward(self, input):

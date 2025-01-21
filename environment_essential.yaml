@@ -1,0 +1,26 @@
+name: DAN
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.14
+  - pytorch=2.4.0
+  - torchvision=0.19.0
+  - cudatoolkit=11.3.1
+  - cudnn=8.9.2.26
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - matplotlib=3.9.2
+  - scikit-learn=1.4.2
+  - pillow=10.3.0
+  - tqdm=4.66.4
+  - pip=24.0
+  - pip:
+    - timm==1.0.9
+    - tensorboard==2.17.1
+    - einops==0.8.0
+    - easydict==1.13
+    - torch-optimizer==0.3.0
+prefix: /userHome/userhome1/automl_undergraduate/miniconda3/envs/DAN
