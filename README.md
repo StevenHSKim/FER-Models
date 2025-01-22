@@ -66,9 +66,11 @@ FER-Models/
 <br>
 
 ## 데이터셋
-- [RAF-DB](http://www.whdeng.cn/raf/model1.html)
-- [FERPlus](https://github.com/Microsoft/FERPlus)
-- [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
-- [ExpW](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html)
-- [SFEW2.0](https://users.cecs.anu.edu.au/~few_group/AFEW.html)
-- [CK+](https://www.jeffcohn.net/Resources/)
+| **데이터셋 이름** | **데이터셋 개수** | **링크** | **취득 방법** |
+|---------------|----------|---------------|---------------|
+| RAFDB | 15339 | [Google Drive](https://drive.google.com/file/d/1GiVsA5sbhc-12brGrKdTIdrKZnXz9vtZ/view) | - Google Drive 링크에서 얼굴 정렬이 완료된 데이터셋을 다운받으세요. |
+| FER2013 | 35887 | [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) | - 공식 Kaggle 링크에서 다운로드 받으세요. |
+| FERPlus | 35711 | [Github](https://github.com/Microsoft/FERPlus) | - 공식 Github ~~~ 하고 ~~~ 하세요. |
+| ExpW | 90560 | [Homepage](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html) | - 홈페이지 링크에서 다운로드 받은 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 하세요. |
+| SFEW2.0 | 1766 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | - 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 하세요. |
+| CK+ | 981 | [Kaggle](https://www.kaggle.com/datasets/shuvoalok/ck-dataset) | - Kaggle 링크에서 다운로드 받으세요. |
