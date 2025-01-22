@@ -71,8 +71,8 @@ FER-Models/
 | RAFDB | 15339 | [Homepage](http://www.whdeng.cn/RAF/model1.html#dataset) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 하세요. | [Google Drive](https://drive.google.com/file/d/1GiVsA5sbhc-12brGrKdTIdrKZnXz9vtZ/view) |
 | FER2013 | 35887 | [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) | 공식 Kaggle 링크에서 다운로드 받으세요. | [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) |
 | FERPlus | 35711 | [Github](https://github.com/Microsoft/FERPlus) | 공식 Github 링크에서 `fer2013new.csv`를 다운로드 받고 [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)의 이미지셋과 함께 사용 하세요. | [Github](https://github.com/Microsoft/FERPlus) |
-| ExpW | 90560 | [Homepage](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html) | 홈페이지에서 다운로드 받은 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 하세요. | ~ |
-| SFEW2.0 | 1766 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 하세요. | ~ |
+| ExpW | 90560 | [Homepage](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html) | 홈페이지에서 다운로드 받은 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 하세요. | in progress |
+| SFEW2.0 | 1766 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 하세요. | in progess |
 | CK+ | 981 | [Homepage](https://www.jeffcohn.net/Resources/) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, 동영상의 마지막 3개의 프레임을 캡처하여 사용하세요. | [Kaggle](https://www.kaggle.com/datasets/shuvoalok/ck-dataset) |
 
 
@@ -83,9 +83,9 @@ FER-Models/
 |:---------------:|:----------:|----------|
 | POSTER | [ir50 & mobilefacenet](https://drive.google.com/drive/folders/1X9pE-NmyRwvBGpVzJOEvLqRPRfk_Siwq) | improved resnet-50(이미지 특징 추출)과 mobilefacenet(랜드마크 특징 추출) |
 | DAN | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 |
-| DDAMFN | - | :-: |
+| DDAMFN | - | - |
 | LNSUNet | [swin transformer](https://drive.google.com/file/d/1GiVsA5sbhc-12brGrKdTIdrKZnXz9vtZ/view) | swin transformer 백본 |
 | Ada-DF | [resnet18](https://drive.google.com/file/d/1ByvxPD9QkmWZDWtTmDQ5ta1MiAkXt22T/view) | msceleb 데이터셋으로 학습시킨 resnet-18 |
 | POSTER++ | [ir50](https://drive.google.com/file/d/17QAIPlpZUwkQzOTNiu-gUFLTqAxS-qHt/view), [mobilefacenet](https://drive.google.com/file/d/1SMYP5NDkmDE3eLlciN7Z4px-bvFEuHEX/view) | improved resnet-50(이미지 특징 추출)과 mobilefacenet(랜드마크 특징 추출) |
 | MFER | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 |
-| GSDNet | - | :-: |
+| GSDNet | - | - |
