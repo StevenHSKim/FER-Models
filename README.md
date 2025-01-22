@@ -60,7 +60,7 @@ FER-Models/
 | Ada-DF | "A Dual-Branch Adaptive Distribution Fusion Framework for Real-World Facial Expression Recognition" | ICASSP 2023 | [Paper](https://scholar.google.com/scholar?hl=ko&as_sdt=0%2C5&q=A+Dual-Branch+Adaptive+Distribution+Fusion+Framework+for+Real-World+Facial+Expression+Recognition.&btnG=) | [Github](https://github.com/taylor-xy0827/Ada-DF) |
 | POSTER++ | "POSTER++: A simpler and stronger facial expression recognition network" | Pattern Recognit. 2024 | [Paper](https://www.sciencedirect.com/science/article/pii/S0031320324007027) | [Github](https://github.com/talented-q/poster_v2) |
 | MFER | "Multiscale Facial Expression Recognition Based on Dynamic Global and Static Local Attention" | IEEE Trans. Affect. Comput. 2024 | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10678884) | [Github](https://github.com/XuJ1E/MFER/?tab=readme-ov-file) |
-| GSDNet | "A gradual self distillation network with adaptive channel attention for facial expression recognition" | Appl. Soft. Comput. 2024 | [Paper](https://www.sciencedirect.com/science/article/pii/S1568494624005362) | [Github](https://github.com/Emy-cv/GSDNet/blob/main/GSD-Net/train.py) |
+| GSDNet | "A gradual self distillation network with adaptive channel attention for facial expression recognition" | Appl. Soft. Comput. 2024 | [Paper](https://www.sciencedirect.com/science/article/pii/S1568494624005362) | [Github](https://github.com/Emy-cv/GSDNet) |
 
 
 <br>
