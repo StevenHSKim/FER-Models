@@ -81,11 +81,11 @@ FER-Models/
 ## 사전학습 모델
 | **모델 이름** | **사용되는 사전학습 모델 다운로드 링크** | **설명** |
 |:---------------:|:----------:|----------|
-| POSTER | [ir50 & mobilefacenet](https://drive.google.com/drive/folders/1X9pE-NmyRwvBGpVzJOEvLqRPRfk_Siwq) | improved resnet-50(이미지 특징 추출)과 mobilefacenet(랜드마크 특징 추출) |
-| DAN | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 |
+| POSTER | [ir50 & mobilefacenet](https://drive.google.com/drive/folders/1X9pE-NmyRwvBGpVzJOEvLqRPRfk_Siwq) | improved resnet-50(이미지 특징 추출 백본)과 mobilefacenet(랜드마크 특징 추출 백본) |
+| DAN | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 백본 |
 | DDAMFN | - | - |
 | LNSUNet | [swin transformer](https://drive.google.com/file/d/1GiVsA5sbhc-12brGrKdTIdrKZnXz9vtZ/view) | swin transformer 백본 |
-| Ada-DF | [resnet18](https://drive.google.com/file/d/1ByvxPD9QkmWZDWtTmDQ5ta1MiAkXt22T/view) | msceleb 데이터셋으로 학습시킨 resnet-18 |
-| POSTER++ | [ir50](https://drive.google.com/file/d/17QAIPlpZUwkQzOTNiu-gUFLTqAxS-qHt/view), [mobilefacenet](https://drive.google.com/file/d/1SMYP5NDkmDE3eLlciN7Z4px-bvFEuHEX/view) | improved resnet-50(이미지 특징 추출)과 mobilefacenet(랜드마크 특징 추출) |
-| MFER | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 |
+| Ada-DF | [resnet18](https://drive.google.com/file/d/1ByvxPD9QkmWZDWtTmDQ5ta1MiAkXt22T/view) | msceleb 데이터셋으로 학습시킨 resnet-18 백본 |
+| POSTER++ | [ir50](https://drive.google.com/file/d/17QAIPlpZUwkQzOTNiu-gUFLTqAxS-qHt/view), [mobilefacenet](https://drive.google.com/file/d/1SMYP5NDkmDE3eLlciN7Z4px-bvFEuHEX/view) | improved resnet-50(이미지 특징 추출 백본)과 mobilefacenet(랜드마크 특징 추출 백본) |
+| MFER | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 백본 |
 | GSDNet | - | - |
