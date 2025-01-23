@@ -75,10 +75,70 @@ FER-Models/
 | SFEW2.0 | 1634 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, `_Aligned_Face` 데이터셋을 다운로드 받아 얼굴이 아닌 이미지는 직접 삭제한 뒤에 사용하였음 | [OneDrive](https://onedrive.live.com/?authkey=%21AFfCWlXvZdm2X%5FY&id=DB4CF9BA40D4F042%214626&cid=DB4CF9BA40D4F042) |
 | CK+ | 981 | [Homepage](https://www.jeffcohn.net/Resources/) | 각 동영상의 마지막 3개의 프레임을 캡처한 데이터셋을 다운로드 받아서 사용하였음 | [Kaggle](https://www.kaggle.com/datasets/shuvoalok/ck-dataset) |
 
-
 <br>
 
+- RAFDB
+  - RAFDB 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
+```
+- datasets/raf-basic/
+    EmoLabel/
+        list_patition_label.txt
+    Image/aligned/
+        train_00001_aligned.jpg
+        test_0001_aligned.jpg
+        ...
+```
+
+- FER2013
+  - FER2013 데이터셋을 다운로드 받아 아래의 과정을 따라 데이터셋을 구성하세요하여 fer2013_modified.csv를 생성하세요
+  - 생성된 파일을 아래와 같은 형식으로 배치하여 사용하세요
+```
+datasets/FER2013/
+    fer2013_modified.csv
+```
+
+- FERPlus
+  - ~~~ 하여 FERPlus_Label_modified.csv를 생성하세요
+  - ~~~ 하여 FERPlus_Image 폴더를 생성하세요
+  - 생성된 파일 및 폴더를 아래와 같은 형식으로 배치하여 사용하세요
+```
+datasets/FERPlus/
+    FERPlus_Label_modified.csv
+    FERPlus_Image/
+        fer0000000.png
+        fer0000001.png
+        ...
+```
+
+- ExpW
+  - ~~~ 하여 aligned_image 폴더를 생성하세요
+  - ~~~ 하여 FERPlus_Image 폴더를 생성하세요
+  - 생성된 파일 및 폴더를 아래와 같은 형식으로 배치하여 사용하세요
+```
+datasets/ExpW_dataset/
+    label/
+        label.lst
+    aligned_image/
+        afraid_African_214.jpg
+        afraid_american_190.jpg
+        ...
+```
+
+- SFEW2.0
+  - SFEW2.0 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
+```
+In progress
+```
+
+- CK+
+  - CK+ 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
+```
+In progress
+```
+
+
 ## 사전학습 모델
+
 | **모델 이름** | **사용되는 사전학습 모델 다운로드 링크** | **설명** |
 |:---------------:|:----------:|----------|
 | POSTER | [ir50 & mobilefacenet](https://drive.google.com/drive/folders/1X9pE-NmyRwvBGpVzJOEvLqRPRfk_Siwq) | improved resnet-50(이미지 특징 추출 백본)과 mobilefacenet(랜드마크 특징 추출 백본) |
@@ -89,3 +149,13 @@ FER-Models/
 | POSTER++ | [ir50](https://drive.google.com/file/d/17QAIPlpZUwkQzOTNiu-gUFLTqAxS-qHt/view), [mobilefacenet](https://drive.google.com/file/d/1SMYP5NDkmDE3eLlciN7Z4px-bvFEuHEX/view) | improved resnet-50(이미지 특징 추출 백본)과 mobilefacenet(랜드마크 특징 추출 백본) |
 | MFER | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 백본 |
 | GSDNet | - | - |
+
+
+위 사전학습 모델을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요.
+```
+ - models/pretrain/
+ 	 ir50.pth
+ 	 mobilefacenet_model_best.pth.tar
+     resnet18_msceleb.pth
+     start_0.pth  # swin-t
+```
