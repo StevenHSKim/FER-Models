@@ -66,21 +66,21 @@ FER-Models/
 <br>
 
 ## 데이터셋
-| **데이터셋 이름** | **이미지 개수** | **공식 홈페이지** | **취득 방법** | **최종 데이터셋 다운로드 링크** |
+| **데이터셋 이름** | **이미지 개수** | **공식 홈페이지** | **취득 방법** | **데이터셋 다운로드 링크** |
 |:---------------:|:----------:|:---------------:|---------------|:---------------:|
-| RAFDB | 15339 | [Homepage](http://www.whdeng.cn/RAF/model1.html#dataset) | [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 완료한 데이터셋을 받아서 사용 하였음 | [Google Drive](https://drive.google.com/file/d/1GiVsA5sbhc-12brGrKdTIdrKZnXz9vtZ/view) |
-| FER2013 | 35887 | [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) | 공식 Kaggle 링크에서 다운로드 받아서 사용하였음 | [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) |
-| FERPlus | 35711 | [Github](https://github.com/Microsoft/FERPlus) | 공식 Github 링크에서 `fer2013new.csv`를 다운로드 받고 [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)의 이미지셋과 함께 사용하였음 | [Github](https://github.com/Microsoft/FERPlus) |
+| RAFDB | 15339 | [Homepage](http://www.whdeng.cn/RAF/model1.html#dataset) | [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 완료한 데이터셋을 다운로드 받아서 사용 하였음 | [Google Drive](https://drive.google.com/file/d/1GiVsA5sbhc-12brGrKdTIdrKZnXz9vtZ/view) |
+| FER2013 | 35887 | [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) | 공식 Kaggle 링크에서 `icml_face_data.csv`를 다운로드 받은 뒤 "emotion"과 "pixel" 열만 남긴 `fer2013_modified`를 생성하여 사용하였음 | [Google Drive](https://drive.google.com/drive/folders/1-mGIAchWBUEhgmIKT36PrvQ1-LXl3Y5n?usp=sharing) |
+| FERPlus | 35711 | [Github](https://github.com/Microsoft/FERPlus) | 공식 Github 링크에서 `fer2013new.csv`를 다운로드 받고, 직접 정의한 [label 생성 코드](https://github.com/StevenHSKim/FERPlus_Vote_To_Label)를 통해 `FERPlus_Label_modified.csv`를 생성하였음. [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)의 pixel값을 공식 Github의 `generate_training_data.py`로 png로 바꾸어 `FERPlus_Image`를 생성하였음 | [Google Drive](https://drive.google.com/drive/folders/1n73_68Zq4aa0KBImIANHhiSJMg6j2zVV?usp=sharing) |
 | ExpW | 90560 | [Homepage](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html) | 홈페이지에서 다운로드 받은 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 직접 정렬 하였음 | [Google Drive](https://drive.google.com/drive/folders/1jNmC5RWqyBFvFsTHnWpg-cti0kpWxEi0?usp=sharing) |
-| SFEW2.0 | 1634 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, `_Aligned_Face` 데이터셋을 다운로드 받아 얼굴이 아닌 이미지는 직접 삭제한 뒤에 사용하였음 | [OneDrive](https://onedrive.live.com/?authkey=%21AFfCWlXvZdm2X%5FY&id=DB4CF9BA40D4F042%214626&cid=DB4CF9BA40D4F042) |
+| SFEW2.0 | 1634 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, `_Aligned_Face` 데이터셋을 다운로드 받아 얼굴이 아닌 이미지는 직접 삭제한 뒤에 사용하였음 | [GoogleDrive]() |
 | CK+ | 981 | [Homepage](https://www.jeffcohn.net/Resources/) | 각 동영상의 마지막 3개의 프레임을 캡처한 데이터셋을 다운로드 받아서 사용하였음 | [Kaggle](https://www.kaggle.com/datasets/shuvoalok/ck-dataset) |
 
 <br>
 
-- RAFDB
-  - RAFDB 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
+### RAFDB
+- RAFDB 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-- datasets/raf-basic/
+datasets/raf-basic/
     EmoLabel/
         list_patition_label.txt
     Image/aligned/
@@ -89,18 +89,18 @@ FER-Models/
         ...
 ```
 
-- FER2013
-  - FER2013 데이터셋을 다운로드 받아 아래의 과정을 따라 데이터셋을 구성하세요하여 fer2013_modified.csv를 생성하세요
-  - 생성된 파일을 아래와 같은 형식으로 배치하여 사용하세요
+### FER2013
+- ~ 하여 `fer2013_modified.csv`를 생성하세요
+- 생성된 파일을 아래와 같은 형식으로 배치하여 사용하세요
 ```
 datasets/FER2013/
     fer2013_modified.csv
 ```
 
-- FERPlus
-  - ~~~ 하여 FERPlus_Label_modified.csv를 생성하세요
-  - ~~~ 하여 FERPlus_Image 폴더를 생성하세요
-  - 생성된 파일 및 폴더를 아래와 같은 형식으로 배치하여 사용하세요
+### FERPlus
+- ~ 하여 `FERPlus_Label_modified.csv`를 생성하세요
+- ~ 하여 `FERPlus_Image` 폴더를 생성하세요
+- 생성된 파일 및 폴더를 아래와 같은 형식으로 배치하여 사용하세요
 ```
 datasets/FERPlus/
     FERPlus_Label_modified.csv
@@ -110,10 +110,10 @@ datasets/FERPlus/
         ...
 ```
 
-- ExpW
-  - ~~~ 하여 aligned_image 폴더를 생성하세요
-  - ~~~ 하여 FERPlus_Image 폴더를 생성하세요
-  - 생성된 파일 및 폴더를 아래와 같은 형식으로 배치하여 사용하세요
+### ExpW
+- ~ 하여 `aligned_image` 폴더를 생성하세요
+- ~ 하여 `FERPlus_Image` 폴더를 생성하세요
+- 생성된 파일 및 폴더를 아래와 같은 형식으로 배치하여 사용하세요
 ```
 datasets/ExpW_dataset/
     label/
@@ -124,14 +124,14 @@ datasets/ExpW_dataset/
         ...
 ```
 
-- SFEW2.0
-  - SFEW2.0 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
+### SFEW2.0
+- SFEW2.0 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
 In progress
 ```
 
-- CK+
-  - CK+ 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
+### CK+
+- CK+ 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
 In progress
 ```
@@ -150,12 +150,13 @@ In progress
 | MFER | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 백본 |
 | GSDNet | - | - |
 
+<br>
 
-위 사전학습 모델을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요.
+위 사전학습 모델을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
- - models/pretrain/
- 	 ir50.pth
- 	 mobilefacenet_model_best.pth.tar
-     resnet18_msceleb.pth
-     start_0.pth  # swin-t
+models/pretrain/
+    ir50.pth                          # improved resnet50
+    mobilefacenet_model_best.pth.tar  # mobilefacenet
+    resnet18_msceleb.pth              # resnet18
+    start_0.pth                       # swin transformer
 ```
