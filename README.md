@@ -80,7 +80,7 @@ FER-Models/
 ### RAFDB
 - RAFDB 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-datasets/raf-basic/
+dataset/raf-basic/
     EmoLabel/
         list_patition_label.txt
     Image/aligned/
@@ -90,19 +90,16 @@ datasets/raf-basic/
 ```
 
 ### FER2013
-- ~ 하여 `fer2013_modified.csv`를 생성하세요
-- 생성된 파일을 아래와 같은 형식으로 배치하여 사용하세요
+- FER2013 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-datasets/FER2013/
+dataset/FER2013/
     fer2013_modified.csv
 ```
 
 ### FERPlus
-- ~ 하여 `FERPlus_Label_modified.csv`를 생성하세요
-- ~ 하여 `FERPlus_Image` 폴더를 생성하세요
-- 생성된 파일 및 폴더를 아래와 같은 형식으로 배치하여 사용하세요
+- FERPlus 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-datasets/FERPlus/
+dataset/FERPlus/
     FERPlus_Label_modified.csv
     FERPlus_Image/
         fer0000000.png
@@ -111,11 +108,9 @@ datasets/FERPlus/
 ```
 
 ### ExpW
-- ~ 하여 `aligned_image` 폴더를 생성하세요
-- ~ 하여 `FERPlus_Image` 폴더를 생성하세요
-- 생성된 파일 및 폴더를 아래와 같은 형식으로 배치하여 사용하세요
+- ExpW 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-datasets/ExpW_dataset/
+dataset/ExpW_dataset/
     label/
         label.lst
     aligned_image/
@@ -127,13 +122,13 @@ datasets/ExpW_dataset/
 ### SFEW2.0
 - SFEW2.0 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-In progress
+In progress...
 ```
 
 ### CK+
 - CK+ 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-In progress
+In progress...
 ```
 
 
