@@ -151,7 +151,7 @@ In progress...
 ```
 models/pretrain/
     ir50.pth                          # improved resnet50
-    mobilefacenet_model_best.pth.tar  # mobilefacenet
+    mobilefacenet_model_best.pth      # mobilefacenet
     resnet18_msceleb.pth              # resnet18
     start_0.pth                       # swin transformer
 ```
