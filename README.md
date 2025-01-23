@@ -71,8 +71,8 @@ FER-Models/
 | RAFDB | 15339 | [Homepage](http://www.whdeng.cn/RAF/model1.html#dataset) | [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 완료한 데이터셋을 받아서 사용 하였음 | [Google Drive](https://drive.google.com/file/d/1GiVsA5sbhc-12brGrKdTIdrKZnXz9vtZ/view) |
 | FER2013 | 35887 | [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) | 공식 Kaggle 링크에서 다운로드 받아서 사용하였음 | [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data) |
 | FERPlus | 35711 | [Github](https://github.com/Microsoft/FERPlus) | 공식 Github 링크에서 `fer2013new.csv`를 다운로드 받고 [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)의 이미지셋과 함께 사용하였음 | [Github](https://github.com/Microsoft/FERPlus) |
-| ExpW | 90560 | [Homepage](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html) | 홈페이지에서 다운로드 받은 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 정렬 하였음 | in progress |
-| SFEW2.0 | 1634 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, `_Aligned_Face` 데이터셋을 다운로드 받고 얼굴이 아닌 이미지는 직접 삭제한 뒤에 사용하였음 | [OneDrive](https://onedrive.live.com/?authkey=%21AFfCWlXvZdm2X%5FY&id=DB4CF9BA40D4F042%214626&cid=DB4CF9BA40D4F042) |
+| ExpW | 90560 | [Homepage](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html) | 홈페이지에서 다운로드 받은 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 직접 정렬 하였음 | [Google Drive](https://drive.google.com/drive/folders/1jNmC5RWqyBFvFsTHnWpg-cti0kpWxEi0?usp=sharing) |
+| SFEW2.0 | 1634 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, `_Aligned_Face` 데이터셋을 다운로드 받아 얼굴이 아닌 이미지는 직접 삭제한 뒤에 사용하였음 | [OneDrive](https://onedrive.live.com/?authkey=%21AFfCWlXvZdm2X%5FY&id=DB4CF9BA40D4F042%214626&cid=DB4CF9BA40D4F042) |
 | CK+ | 981 | [Homepage](https://www.jeffcohn.net/Resources/) | 각 동영상의 마지막 3개의 프레임을 캡처한 데이터셋을 다운로드 받아서 사용하였음 | [Kaggle](https://www.kaggle.com/datasets/shuvoalok/ck-dataset) |
 
 
