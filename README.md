@@ -110,7 +110,7 @@ dataset/FERPlus/
 ### ExpW
 - ExpW 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-dataset/ExpW_dataset/
+dataset/ExpW/
     label/
         label.lst
     aligned_image/
