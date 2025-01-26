@@ -122,13 +122,23 @@ dataset/ExpW_dataset/
 ### SFEW2.0
 - SFEW2.0 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-In progress...
+dataset/SFEW2.0/
+    sfew_2.0_labels.csv
+    sfew2.0_images/
+        image_000000.png
+        image_000001.png
+        ...
 ```
 
 ### CK+
 - CK+ 데이터셋을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
-In progress...
+dataset/CKPlus/
+    ckplus_labels.csv
+    ckplus_images/
+        image_000000.png
+        image_000001.png
+        ...
 ```
 
 <br>
