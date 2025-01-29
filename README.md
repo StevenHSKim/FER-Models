@@ -73,7 +73,7 @@ FER-Models/
 | FERPlus | 35711 | [Github](https://github.com/Microsoft/FERPlus) | 공식 Github 링크에서 `fer2013new.csv`를 다운로드 받고, 직접 정의한 [label 생성 코드](https://github.com/StevenHSKim/FERPlus_Vote_To_Label)를 통해 `FERPlus_Label_modified.csv`를 생성하였음. [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)의 pixel값을 공식 Github의 `generate_training_data.py`로 png로 바꾸어 `FERPlus_Image`를 생성하였음 | [Google Drive](https://drive.google.com/drive/folders/1n73_68Zq4aa0KBImIANHhiSJMg6j2zVV?usp=sharing) |
 | ExpW | 90560 | [Homepage](https://mmlab.ie.cuhk.edu.hk/projects/socialrelation/index.html) | 홈페이지에서 다운로드 받은 뒤, [MTCNN](https://github.com/foamliu/Face-Alignment)을 이용하여 얼굴을 직접 정렬 하였음 | [Google Drive](https://drive.google.com/drive/folders/1jNmC5RWqyBFvFsTHnWpg-cti0kpWxEi0?usp=sharing) |
 | SFEW2.0 | 1634 | [Homepage](https://users.cecs.anu.edu.au/~few_group/AFEW.html) | 홈페이지를 통해 저자에게 데이터셋을 요청한 뒤, `_Aligned_Face` 데이터셋을 다운로드 받아 얼굴이 아닌 이미지는 직접 삭제한 뒤에 사용하였음 | [Google Drive](https://drive.google.com/drive/folders/1FuhcMW5LXaaWe8sKoGizQW78s04VcOHW?usp=sharing) |
-| CK+ | 981 | [Homepage](https://www.jeffcohn.net/Resources/) [Kaggle](https://www.kaggle.com/datasets/shuvoalok/ck-dataset) | 각 동영상의 마지막 3개의 프레임을 캡처한 데이터셋을 다운로드 받아서 사용하였음 | [Google Drive](https://drive.google.com/drive/folders/1kuT6zQhZtyBPgTB4UqNJWq0ZBLAooTfA?usp=sharing) |
+| CK+ | 981 | [Homepage](https://www.jeffcohn.net/Resources/), [Kaggle](https://www.kaggle.com/datasets/shuvoalok/ck-dataset) | 각 동영상의 마지막 3개의 프레임을 캡처한 데이터셋을 다운로드 받아서 사용하였음 | [Google Drive](https://drive.google.com/drive/folders/1kuT6zQhZtyBPgTB4UqNJWq0ZBLAooTfA?usp=sharing) |
 
 <br>
 
