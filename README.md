@@ -154,15 +154,16 @@ dataset/CKPlus/
 | Ada-DF | [resnet18](https://drive.google.com/file/d/1ByvxPD9QkmWZDWtTmDQ5ta1MiAkXt22T/view) | msceleb 데이터셋으로 학습시킨 resnet-18 백본 |
 | POSTER++ | [ir50](https://drive.google.com/file/d/17QAIPlpZUwkQzOTNiu-gUFLTqAxS-qHt/view), [mobilefacenet](https://drive.google.com/file/d/1SMYP5NDkmDE3eLlciN7Z4px-bvFEuHEX/view) | improved resnet-50(이미지 특징 추출 백본)과 mobilefacenet(랜드마크 특징 추출 백본) |
 | MFER | [resnet18](https://drive.google.com/file/d/1u2NtY-5DVlTunfN4yxfxys5n8uh7sc3n/view) | msceleb 데이터셋으로 학습시킨 resnet-18 백본 |
-| GSDNet | - | - |
+| GSDNet | [resnet50](https://drive.google.com/drive/folders/1OUrrHPYRDneS5OcE6sk8PwbfP_zhmvmJ) | msceleb 데이터셋으로 학습시킨 resnet-50 백본 |
 
 <br>
 
 위 사전학습 모델을 다운로드 받아 아래와 같은 형식으로 배치하여 사용하세요
 ```
 models/pretrain/
-    ir50.pth                          # improved resnet50
-    mobilefacenet_model_best.pth      # mobilefacenet
-    resnet18_msceleb.pth              # resnet18
-    start_0.pth                       # swin transformer
+    ir50.pth                            # improved resnet50
+    mobilefacenet_model_best.pth        # mobilefacenet
+    resnet18_msceleb.pth                # resnet18
+    start_0.pth                         # swin transformer
+    vgg_msceleb_resnet50_ft_weight.pkl  # resnet50
 ```
